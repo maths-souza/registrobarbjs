@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Atendimento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>BARBEARIA DO MATHEUS</h1>
+        <p>O melhor corte da cidade!</p>
+    </header>
+
+    <form class="formulario" id="formularioCadastro">
+        <h2>REGISTRO DE ATENDIMENTO</h2>
+
+        <label for="nome">Nome do cliente</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(55) 99999-9999" required>
+
+        <label for="horario">Horário de interesse</label>
+        <input type="time" id="horario" name="horario" placeholder="'Ex: 14:30'">
+
+        <label for="endereco">Endereço do cliente</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro">
+
+        <label for="servico">Serviço de Interesse</label>
+        <select id="servico" name="servico">
+            <option value="">Selecione um serviço</option>
+            <option value="corte-tradicional">Corte Tradicional (R$ 35,00)</option>
+            <option value="barba-maquina">Barba Máquina (R$ 40,00)</option>
+            <option value="corte-infantil">Corte Infantil (R$ 25,00)</option>
+            <option value="pezinho-cabelo">Pezinho Cabelo (R$ 20,00)</option>
+            <option value="barboterapia">Barboterapia (R$ 50,00)</option>
+            <option value="pezinho-barba">Pezinho Barba (R$ 20,00)</option>
+            <option value="outro">Outro (falar pessoalmente)</option>
+        </select>
+
+        <button type="submit">REGISTRAR</button>
+    </form>
+
+    <footer>
+        <p>© 2025 Barbearia do Matheus. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
